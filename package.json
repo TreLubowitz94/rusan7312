@@ -1,19 +1,18 @@
 {
   "name": "nodejs",
-  "version": "1,0,0",
-  "description": "Thsi is a node project",
+  "version": "1.0.0",
+  "description": "nodejs",
   "main": "index.js",
   "author": "",
-  "repository": "",
   "license": "MIT",
   "private": false,
   "scripts": {
-    "dev": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node index.js"
   },
   "dependencies": {
-    "axios": "latest",
-    "express": "^4.18.2"
+    "ws": "^8.14.2",
+    "axios": "^1.6.2"
   },
   "engines": {
     "node": ">=14"
