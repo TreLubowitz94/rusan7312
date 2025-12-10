@@ -1,4 +1,4 @@
-FROM python:3.10-alpine
+FROM node:slim
 
 WORKDIR /app
 
@@ -6,8 +6,8 @@ COPY . .
 
 EXPOSE 3000
 
-RUN apk update && apk --no-cache add openssl bash curl &&\
-    chmod +x app.py &&\
-    pip install -r requirements.txt
+RUN apt update -y &&\
+    chmod +x index.js &&\
+    npm install 
     
-CMD ["python3", "app.py"]
+CMD ["node", "index.js"]
